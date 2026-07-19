@@ -5,6 +5,6 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "check": "node --check app.js && node --check input-wizard.js && node --check calculations.js && node --check csv.js && node --check storage.js"
+    "check": "node --check app.js && node --check input-wizard.js && node --check scenario-ranges.js && node --check calculations.js && node --check csv.js && node --check storage.js"
   }
 }
