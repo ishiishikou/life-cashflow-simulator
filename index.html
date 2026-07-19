@@ -7,6 +7,7 @@
   <meta name="theme-color" content="#f7f3ea" />
   <title>Life Cashflow Simulator</title>
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./input-wizard.css" />
 </head>
 <body>
   <div class="app-shell">
@@ -58,11 +59,11 @@
       </section>
 
       <section id="tab-inputs" class="tab-panel" aria-labelledby="inputs-heading">
-        <div class="section-heading-row">
-          <div><p class="eyebrow">Assumptions</p><h2 id="inputs-heading">入力値と根拠</h2><p>分からない項目は参考値を仮置きできます。確定値に置き換えるほど判定信頼度が上がります。</p></div>
+        <div class="section-heading-row input-section-heading">
+          <div><p class="eyebrow">Step by step</p><h2 id="inputs-heading">家計情報を入力</h2><p>表示された項目を確認し、入力後に次の項目へ進んでください。分からない場合は参考値やAI計算を利用できます。</p></div>
           <div id="confidence-card" class="confidence-card"></div>
         </div>
-        <div id="input-groups"></div>
+        <div id="input-groups" aria-live="polite"></div>
       </section>
 
       <section id="tab-actuals" class="tab-panel" aria-labelledby="actuals-heading">
@@ -101,5 +102,6 @@
   </div>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <script type="module" src="./app.js"></script>
+  <script type="module" src="./input-wizard.js"></script>
 </body>
 </html>
